@@ -1,0 +1,354 @@
+/* IMPORTS ------------------------------------------------------------*/
+
+@import url('reset.css');
+
+@import url('social-icons.css');
+
+@import url('nggallery.css');
+
+/* HACKS ------------------------------------------------------------*/
+
+.clear{
+	clear:both;
+	height:1px;
+}
+
+.inv{ display:none; }
+
+
+
+/* GENERAL ------------------------------------------------------------*/
+
+html{
+}
+
+body {
+	line-height: 1;
+ 	font-family: 'Chela One', cursive;
+	font-size:  100%;
+	height: 100%;
+	overflow:auto;
+}
+
+div#wrapper{
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	background: url(../img/natural_paper.jpg);
+	padding-top:10px;
+	margin-top:5px;
+ border-style: solid;
+border-width: 42px 30px 45px 30px;
+-moz-border-image: url(../img/border.png) 42 30 45 30 repeat;
+-webkit-border-image: url(../img/border.png) 42 30 45 30 repeat;
+-o-border-image: url(../img/border.png) 42 30 45 30 repeat;
+border-image: url(../img/border.png) 42 30 45 30 fill repeat;
+	}
+
+
+div#content{
+	position: relative;
+	font-size: 16px;
+}
+
+
+img#logo{
+	margin:auto;
+	margin-top:0;
+	padding:auto;
+	z-index:1;
+}
+
+h1{	font-size: 24px;}
+
+h2{	font-size: 22px;}
+
+h3{	font-size: 20px;}
+
+h4{	font-size: 18px;}
+
+h5{	font-size: 16px;}
+
+h6{	font-size: 14px;}
+
+
+h1, h2, h3, h4, h5, h6{
+	margin-bottom: .5em;
+}
+
+a{
+	text-decoration: none;
+}
+
+.headline,
+.custom,
+.title .big{
+	word-spacing: 0.2em;
+}
+
+
+/* HEADLINE -------------------------------------------------------------------------- */
+div.headline{
+	font-family: 'Chela One', cursive;
+	font-size: 32px;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom:20px;
+	text-shadow: 1px 1px 0.05em black;
+}
+
+
+
+
+.title span.small{
+	display: block;
+	float: left;
+	font-size: 14px;
+	margin-left: 15px;
+	margin-top: 31px;
+}
+
+a.more{
+	font-weight:900;
+	display: block;
+	color: #444;
+	font-size: 14px;
+	line-height: 1.3em;
+	text-decoration: none;
+}
+
+a.more:hover{
+	color: white;
+}
+
+
+/* NAV ------------------------------------------------------------*/
+
+#centeredmenu {
+font-family: 'Chela One', cursive;
+   clear:both;
+   float:left;
+   padding:0 0 20px 0;
+   width:100%;
+   font-size:14px; 
+   z-index:1090909; 
+   position:relative;
+}
+
+/* Top menu items */
+#centeredmenu ul {
+   float:right;
+   position:relative;
+   right:50%;
+}
+
+#centeredmenu ul li {
+   margin:0 0 0 1px;
+   padding:0;
+   float:left;
+   position:relative;
+   left:50%;
+   top:1px;
+}
+
+#centeredmenu ul li a {
+	text-shadow: 1px 1px 0.05em black;
+   display:block;
+   margin:0 10px;
+   padding:.6em .5em .4em;
+   font-size:16px;
+   line-height:1em;
+   text-decoration:none;
+   color:#DF6549;
+}
+
+#centeredmenu ul li.current_page_item > a,
+#centeredmenu ul li > a:hover{
+   color:#fff;
+}
+
+
+
+#centeredmenu ul ul li a,
+#centeredmenu ul li.active li a,
+#centeredmenu ul li:hover ul li a,
+#centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below */
+   font-size:12px;
+   font-weight:normal; /* resets the bold set for the top level menu items */
+   color:#fff;
+   line-height:1.4em; /* overwrite line-height value from top menu */
+   border-bottom:1px solid #FFF; /* sub menu item horizontal lines */
+}
+
+#centeredmenu ul ul li a:hover,
+#centeredmenu ul li.active ul li a:hover,
+#centeredmenu ul li:hover ul li a:hover,
+#centeredmenu ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
+   background:#FFF; /* Sub menu items background colour */
+   color:#112329;
+}
+
+
+
+/* blocks-holder ------------------------------------------------------------*/
+
+.blocks-holder{
+	overflow: hidden;
+	margin-bottom: 20px;
+	min-height: 200px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.blocks-holder li{
+
+	color: #090909;
+	width: auto;
+	float: left;
+}
+
+.blocks-holder li.block-1{
+	margin-left: 34px;
+}
+
+.blocks-holder li .thumb-holder{
+font-family: 'Chela One', cursive;
+width:912px;
+}
+
+.blocks-holder .block-title{
+font-family: 'Chela One', cursive;
+font-weight:400;
+	color: #DF6549;
+	text-shadow: 1px 1px 0.05em black;
+	font-size: 20px;
+	line-height: 1.3em;
+	margin-bottom: .4em;
+}
+
+.blocks-holder .thumb-text{
+	width:912px;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.blocks-holder a.more{
+font-family: 'Chela One', cursive;
+	margin-top: 10px;
+	float: left;
+}
+
+
+
+
+
+/* FOOTER ------------------------------------------------------------*/
+
+div#footer{
+	margin-top:20px;
+	width: 100%;
+	padding-bottom:20px;
+	height:auto;
+}
+
+div#footer a{
+	text-decoration: none;
+	
+}
+
+div#footer div#footer-wrapper{
+	background: url(../img/bg-footer-lines.png)  no-repeat 0px 5px;
+}
+
+/* FOOTER-BOTTOM ------------------------------------------------------------*/
+
+div#footer div.footer-bottom{
+	color: white;
+}
+
+div#footer div.footer-bottom a{
+	color: white;
+}
+
+div#footer div.footer-bottom p.legal{
+	font-size: 12px;
+	line-height: 1.5em;
+	text-align: center;
+
+}
+
+#down{
+}
+
+#test{
+color:#090909;
+font-size: 32px;
+font-family: 'Chela One', cursive;
+}
+#up{
+}
+
+.ribbon-right {
+  position: absolute;
+  width: 56px;
+  height: 92px;
+  background: url(../img/ribbon-right.png) no-repeat;
+  top: +40px;
+  right: -56px;
+  z-index:-1;
+}
+
+#header-holder .ribbon-left {
+position:absolute;
+  width: 56px;
+  height: 92px;
+  background: url(../img/ribbon-left.png) no-repeat;
+top:+40px;
+left:-56px;
+z-index:-1;
+}
+#header-holder{
+  min-height: 92px;
+  text-align: center;
+}
+
+#just-space{
+padding-bottom:40px;
+height:40px;
+}
+
+.unit-content{
+width:auto;
+padding-bottom:50px;
+line-height:150%;
+margin-top:40px;margin-bottom:40px; padding:auto;margin:auto;width:800px;
+}
+.member-content{
+line-height:200%;
+width:auto;
+padding-bottom:50px;
+}
+.block-1 h1{
+font-family: 'Chela One', cursive;
+text-align:center;
+	text-shadow: 1px 1px 0.05em black;
+	color:#C2D1D5;
+	padding-bottom:20px;
+	margin-top:20px;
+}
+
+.team-img{
+padding:1px;
+   border:1px solid #021a40;
+   background-color:#DF6549;
+   
+   margin: 0px 15px 0px 15px;-moz-box-shadow: 0 0 5px #DF6549;
+-webkit-box-shadow: 0 0 5px #DF6549;
+box-shadow: 0 0 5px #DF6549;
+}
+.unit-title{
+	text-shadow: 1px 1px 0.05em black;
+	color:black;
+	font-size:18px;
+	color:#DF6549;
+}
